@@ -1,0 +1,38 @@
+const path = require("path")
+
+module.exports = ({
+  basePath = "/",
+  imagePath = "og-image",
+  contentPath = "blog",
+  ns = "@korf/gatsby-theme-blog",
+  ogWidth = 1200,
+  ogHeight = 630,
+  ogBackgroundColor = 'rgb(255,255,255)',
+  ogBackgroundImage = path.join(__dirname, '..', 'assets', 'background.png'),
+  // ogBaseFontSize is the original size of the BMFont. Its better to use a big one and scale down.
+  ogBaseFontSize = 288,
+  ogFontSize = 70,
+  ogVBandColor = 'rgb(200,200,200)',
+  ogVBandWidth = 10,
+  ogHBandColor = 'rgb(200,200,200)',
+  ogHBandWidth = 0,
+  ogTextColor = 'rgb(48,48,48)',
+  ogTextOpacity = 1.0,
+}) => ({
+    basePath,
+    imagePath,
+    ogHeight,
+    ogWidth,
+    contentPath,
+    ogBackgroundColor,
+    ogBaseFontSize,
+    ogFontSize,
+    ns,
+    ogBackgroundImage,
+    ogVBandColor,
+    ogVBandWidth,
+    ogHBandColor,
+    ogHBandWidth,
+    ogTextColor,
+    ogTextOpacity,
+});

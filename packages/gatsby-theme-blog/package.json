@@ -1,0 +1,19 @@
+{
+  "name": "@korf/gatsby-theme-blog",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.17.10",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "dependencies": {
+    "@korf/gatsby-theme-blog-core": "*",
+    "@korf/gatsby-theme-blog-og-image": "*",
+    "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/react": "^1.5.1",
+    "gatsby-image": "^2.2.30",
+    "gatsby-plugin-mdx": "^1.0.55"
+  }
+}
