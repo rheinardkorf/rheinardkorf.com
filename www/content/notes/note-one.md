@@ -1,8 +1,6 @@
 ---
-title: Title of blog post one.
+title: Note one!
 ---
-
-![This is an image](og-image/title-of-blog-post-two-og.png)
 
 Nisi sit ullamco aliquip minim esse ea. Mollit officia ad sit sit anim exercitation labore eu aliquip. Eiusmod elit proident esse labore. Nulla fugiat magna nisi dolor ea.
 

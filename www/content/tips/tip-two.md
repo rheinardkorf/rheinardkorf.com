@@ -2,7 +2,7 @@
 title: This is Tip Two.
 ---
 
-```
+```javascript
 import { graphql } from "gatsby"
 import BlogPage from "../components/blog-page"
 

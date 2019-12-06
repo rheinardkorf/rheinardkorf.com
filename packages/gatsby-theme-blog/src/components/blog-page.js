@@ -1,19 +1,26 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Img from "gatsby-image"
+import SEO from "../components/seo"
+import { Styled } from "theme-ui"
 
-const BlogPage = ({data}) => {
+const BlogPage = ({path, data}) => {
   const { page, ogImage } = data
+
+  const title = path !== "/" ? page.title : ""
+
   return (
     <Layout>
-      <h1>{page.title}</h1>
+      <SEO title={page.title} image={ogImage ? ogImage.childImageSharp.fixed.src : null} />
+      <Styled.h1>{title}</Styled.h1>
       <MDXRenderer>{page.body}</MDXRenderer>
-      <p>This page was updated {page.updated}.</p>
-      {ogImage ? <Img
-        fixed={ogImage.childImageSharp.fixed}
-        alt={page.title}
-      /> : null}
+      {/* { path !== "/" ?
+      <p sx={{
+        fontStyle: "oblique",
+        color: "gray",
+      }}><small>This page was updated {page.updated}.</small></p> : null
+      } */}
     </Layout>
   )
 }

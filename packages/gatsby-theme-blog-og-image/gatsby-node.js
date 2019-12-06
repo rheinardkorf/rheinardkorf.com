@@ -55,6 +55,10 @@ exports.onCreateNode = async ({ store, node }, options) => {
       ogHeight / scaleFactor,
       "rgba(0,0,0,0)"
     )
+
+    // Font created with `msdf-bmfont`.
+    // E.g.:
+    // msdf-bmfont -o crimsom-text-bold.png -s 288 -t sdf -r 2 crimson-text-700.ttf
     const font = await Jimp.loadFont(
       path.join(__dirname, "assets", "crimson-text-700.fnt") // 288pt
     )

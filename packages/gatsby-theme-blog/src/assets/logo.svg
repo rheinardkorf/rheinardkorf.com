@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 142 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-402.167,-190.955)">
+        <g transform="matrix(1,0,0,1,-704,-439)">
+            <g transform="matrix(1,0,0,1,1027,435.955)">
+                <circle cx="149.986" cy="264.819" r="70.819" style="fill:rgb(55,55,55);"/>
+            </g>
+            <g id="RK_Cicle_Altered" transform="matrix(1,0,0,1,1096.99,200.782)">
+                <g transform="matrix(1,0,0,1,-470,-49.9797)">
+                    <path d="M491.894,535C498.563,509.134 522.071,490 550.014,490C583.137,490 610.029,516.885 610.029,550C610.029,583.115 583.137,610 550.014,610C516.892,610 490,583.115 490,550C490,548.316 490.07,546.649 490.206,545L500.247,545C500.084,546.645 500,548.313 500,550C500,577.596 522.404,600 550,600C577.596,600 600,577.596 600,550C600,522.404 577.596,500 550,500C527.629,500 508.67,514.723 502.293,535L491.894,535Z" style="fill:white;"/>
+                </g>
+                <path d="M30,475.02L40,475L65,475C73.279,475 80,481.742 80,490.02C80,496.782 75.516,502.505 69.362,504.375L85,520L84.996,520L90,525L75,525L55.004,505.02L55,505.02L53.571,503.589L50,500.02L50.004,500.02L45,495.02L45.02,495.02L45,495L65,495.02C67.765,495.02 70.01,492.796 70.01,490.03C70.01,487.265 67.765,485 65,485L40,485L30,485.02L30,475.02Z" style="fill:white;"/>
+                <g transform="matrix(1,0,0,1,20,-55)">
+                    <path d="M60,554.992L85,579.971L100,579.971L75,554.992L75,554.98L100,530L85,530L60,554.98" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

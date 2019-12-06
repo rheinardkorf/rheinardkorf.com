@@ -9,11 +9,19 @@
     "react-dom": "^16.11.0"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.22",
     "@korf/gatsby-theme-blog-core": "*",
     "@korf/gatsby-theme-blog-og-image": "*",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "@theme-ui/prism": "^0.2.46",
     "gatsby-image": "^2.2.30",
-    "gatsby-plugin-mdx": "^1.0.55"
+    "gatsby-plugin-mdx": "^1.0.55",
+    "gatsby-plugin-react-helmet": "^3.1.15",
+    "gatsby-plugin-theme-ui": "^0.2.43",
+    "react-helmet": "^5.2.1",
+    "theme-ui": "^0.2.49",
+    "typeface-crimson-text": "^0.0.72",
+    "typeface-inter": "^3.10.0"
   }
 }

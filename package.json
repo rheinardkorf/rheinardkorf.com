@@ -7,7 +7,7 @@
     "develop": "yarn workspace www develop -H 0.0.0.0",
     "clean": "yarn workspace www clean"
   },
-  "workspaces":[
+  "workspaces": [
     "www",
     "packages/*"
   ]
