@@ -5,14 +5,17 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import SEO from "../components/seo"
 import { Styled } from "theme-ui"
 
-const BlogPage = ({path, data}) => {
+const BlogPage = ({ path, data }) => {
   const { page, ogImage } = data
 
   const title = path !== "/" ? page.title : ""
 
   return (
     <Layout>
-      <SEO title={page.title} image={ogImage ? ogImage.childImageSharp.fixed.src : null} />
+      <SEO
+        title={page.title}
+        image={ogImage ? ogImage.childImageSharp.fixed.src : null}
+      />
       <Styled.h1>{title}</Styled.h1>
       <MDXRenderer>{page.body}</MDXRenderer>
       {/* { path !== "/" ?

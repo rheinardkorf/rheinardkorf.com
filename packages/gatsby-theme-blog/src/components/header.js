@@ -14,8 +14,8 @@ const Header = () => {
             author
             domain
             primaryNav {
-                name
-                url
+              name
+              url
             }
           }
         }
@@ -26,64 +26,70 @@ const Header = () => {
   return (
     <div
       sx={{
-        display: "flex",
-        backgroundColor: "text",
-        justifyContent: "left",
-        maxHeight: 60,
+        variant: "layout.Header",
       }}
     >
       <div
         sx={{
-          padding: 0,
-          mx: "auto",
-          minWidth: [320, 700, 800],
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
+          variant: "layout.Header.Container",
         }}
       >
-        <Link
-          to="/"
-          sx={{
-            mt: [10,30],
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            textDecoration: "none",
-            color: "background",
-            borderBottom: "0px",
-            borderBottomStyle: "none",
-          }}
-        >
-          <img
-            sx={{
-              maxWidth: 80,
-            }}
-            src={logo}
-            alt={site.siteMetadata.title + ' logo'}
-          />
-        </Link>
         <div
           sx={{
-            a: {
-                mx: 10,
-              fontSize: "0.9em",
-              color: "background",
-              fontWeight: "body",
-              textDecoration: "none",
-              borderBottom: "1px dashed",
-              borderBottomColor: "background",
-              "&:hover": {
-                borderBottomColor: "primary",
-              },
-            },
+            variant: "layout.Header.Container.Branding",
+          }}
+        >
+          <Link
+            to="/"
+            sx={{
+              variant: "layout.Header.Container.Branding.Link",
+            }}
+          >
+            <img
+              sx={{
+                variant: "layout.Header.Container.Branding.Link.Logo",
+              }}
+              src={logo}
+              alt={site.siteMetadata.title + " logo"}
+            />
+            <div
+              sx={{
+                variant: "layout.Header.Container.Branding.Link.Title",
+              }}
+            >
+              {site.siteMetadata.title}
+            </div>
+          </Link>
+        </div>
+        <ul
+          sx={{
+            variant: "layout.Header.Container.Navigation",
           }}
         >
           {site.siteMetadata.primaryNav.map(item => (
-            <Link to={item.url} key={item.name}>{item.name}</Link>
+            <li
+              sx={{
+                variant: "layout.Header.Container.Navigation.Item",
+              }}
+            >
+              <Link
+                to={item.url}
+                key={item.name}
+                sx={{
+                  variant: "layout.Header.Container.Navigation.Item.Link",
+                }}
+              >
+                <span
+                  sx={{
+                    variant: "layout.Header.Container.Navigation.Item.Label",
+                  }}
+                >
+                  {item.name}
+                </span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   )

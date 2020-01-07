@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
           padding: 10,
           mx: "auto",
           maxWidth: 800,
+          width: "100vw",
           mt: 30,
           flex: "1 1 auto",
         }}

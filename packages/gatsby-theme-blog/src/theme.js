@@ -10,9 +10,9 @@ export const theme = {
   colors: {
     text: "#373737",
     background: "white",
-    primary: "blue",
+    primary: "#00477C",
     secondary: "red",
-    accent: "blue",
+    accent: "#00477C",
     muted: "rgba(0,0,0,0.04)",
     // modes: {
     //   dark: {
@@ -62,6 +62,70 @@ export const theme = {
   radii: [],
   shadows: [],
   zIndices: [],
+  layout: {
+    Header: {
+      backgroundColor: "accent",
+      display: "flex",
+
+      Container: {
+        display: "flex",
+        maxWidth: "800px",
+        width: "100%",
+        mx: "auto",
+        justifyContent: "space-between",
+        alignItems: "center",
+        py: "10px",
+        flexDirection: ["column", "row"],
+
+        Branding: {
+          flex: "1 1 100%",
+
+          Link: {
+            textDecoration: "none",
+            color: "background",
+            display: "flex",
+            alignItems: "center",
+
+            Logo: {
+              maxWidth: "46px",
+              maxHeight: "46px",
+              mr: "10px",
+              mb: ["10px", "0"],
+              display: "block",
+            },
+
+            Title: {
+              display: ["none", "block"],
+            },
+          },
+        },
+
+        Navigation: {
+          listStyle: "none",
+          m: 0,
+          p: 0,
+          display: "flex",
+          flex: "1 1 100%",
+
+          Item: {
+            Link: {
+              display: "inline-block",
+              mx: 10,
+              fontSize: "0.9em",
+              color: "background",
+              fontWeight: "body",
+              textDecoration: "none",
+              borderBottom: "1px dashed",
+              borderBottomColor: "background",
+              "&:hover": {
+                borderBottomColor: "secondary",
+              },
+            },
+          },
+        },
+      },
+    },
+  },
   styles: {
     a: {
       fontWeight: "bold",
@@ -72,7 +136,7 @@ export const theme = {
     hr: {
       border: "none",
       borderBottom: "1px dashed",
-      borderBottomColor: "gray"
+      borderBottomColor: "gray",
     },
     h1: {
       fontFamily: "heading",
@@ -106,10 +170,10 @@ export const theme = {
     },
     code: {
       backgroundColor: "muted",
-      border: (theme) => `1px dashed ${theme.colors.primary}`,
-      fontSize: '0.9em',
-      padding: '3px',
-      borderRadius: '5px',
+      border: theme => `1px dashed ${theme.colors.primary}`,
+      fontSize: "0.9em",
+      padding: "3px",
+      borderRadius: "5px",
     },
     // Prismjs styles.
     pre: {
@@ -123,8 +187,8 @@ export const theme = {
       //     borderRight: "3px solid rgba(0,0,0,0.06)",
       //   },
       code: {
-        border: 'none',
-        backgroundColor: 'inherit' ,
+        border: "none",
+        backgroundColor: "inherit",
       },
     },
     blockquote: {
