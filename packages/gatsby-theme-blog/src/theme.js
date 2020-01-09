@@ -106,6 +106,7 @@ export const theme = {
           p: 0,
           display: "flex",
           flex: "1 1 100%",
+          justifyContent: ["center", "flex-end"],
 
           Item: {
             Link: {

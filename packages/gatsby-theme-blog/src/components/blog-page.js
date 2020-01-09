@@ -8,15 +8,13 @@ import { Styled } from "theme-ui"
 const BlogPage = ({ path, data }) => {
   const { page, ogImage } = data
 
-  const title = path !== "/" ? page.title : ""
-
   return (
     <Layout>
       <SEO
-        title={page.title}
+        title={page.seoTitle}
         image={ogImage ? ogImage.childImageSharp.fixed.src : null}
       />
-      <Styled.h1>{title}</Styled.h1>
+      <Styled.h1>{page.title}</Styled.h1>
       <MDXRenderer>{page.body}</MDXRenderer>
       {/* { path !== "/" ?
       <p sx={{

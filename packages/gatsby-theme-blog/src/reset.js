@@ -10,7 +10,6 @@ export const reset = {
   },
   body: {
     overflowX: "hidden",
-    "overflow-x": "hidden",
     margin: 0,
     scrollbarWidth: "thin",
     "&::-webkit-scrollbar": {

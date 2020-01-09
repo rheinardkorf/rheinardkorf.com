@@ -27,7 +27,6 @@ function SEO({ description, lang, meta, keywords, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-      console.log(site)
   return (
     <Helmet
       htmlAttributes={{
@@ -53,8 +52,8 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           content: `website`,
         },
         {
-            property: `og:image`,
-            content: image,
+          property: `og:image`,
+          content: image,
         },
         {
           name: `twitter:card`,
@@ -73,8 +72,8 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           content: metaDescription,
         },
         {
-            property: `twitter:image`,
-            content: `${site.siteMetadata.domain}/${image}`,
+          property: `twitter:image`,
+          content: (site.siteMetadata.domain + "/" + image).replace("///", "/"),
         },
       ]
         .concat(

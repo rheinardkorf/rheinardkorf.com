@@ -3,11 +3,13 @@ module.exports = ({
   basePath = "/",
   contentPath = "blog",
   useExternalMDX = false,
-  ns = "@korf/gatsby-theme-blog"
+  ns = "@korf/gatsby-theme-blog",
+  titleField = "seoTitle",
 }) => ({
-    description,
-    basePath,
-    contentPath,
-    useExternalMDX,
-    ns
-});
+  description,
+  basePath,
+  contentPath,
+  useExternalMDX,
+  ns,
+  titleField,
+})

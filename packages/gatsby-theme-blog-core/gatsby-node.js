@@ -19,7 +19,8 @@ exports.createSchemaCustomization = ({ actions }) => {
   actions.createTypes(`
         type BlogPage implements Node @dontInfer {
             id: ID!
-            title: String!
+            title: String
+            seoTitle: String!
             path: String!
             updated: Date! @dateformat
             body: String!
@@ -44,10 +45,12 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }, options) => {
       parent.relativeDirectory,
       pageName
     )
-    console.log(pagePath)
+
     actions.createNode({
       id: createNodeId(`BlogPage-${node.id}`),
-      title: node.frontmatter.title || parent.name,
+      title: node.frontmatter.title || "",
+      seoTitle:
+        node.frontmatter.seoTitle || node.frontmatter.title || parent.name,
       updated: parent.modifiedTime,
       path: pagePath,
       parent: node.id,
@@ -103,16 +106,18 @@ exports.createResolvers = ({ createResolvers }) => {
 }
 
 exports.createPages = async ({ actions, graphql, reporter }, options) => {
-
-  const {ns, basePath, description} = withDefaults(options)
+  const { ns, basePath, description, titleField, contentPath } = withDefaults(
+    options
+  )
 
   const result = await graphql(`
     query {
-      allBlogPage(sort: { fields: updated, order: DESC }, limit: 2000) {
+      allBlogPage(filter: {basePath: {eq: "${basePath}"}}, sort: { fields: updated, order: DESC }, limit: 2000) {
         nodes {
           id
           path
           title
+          seoTitle
           basePath
           updated
         }
@@ -125,11 +130,12 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
   }
 
   const blogPageTemplate = require.resolve("./src/templates/blog-page-template")
-  const blogArchiveTemplate = require.resolve("./src/templates/blog-archive-template")
+  const blogArchiveTemplate = require.resolve(
+    "./src/templates/blog-archive-template"
+  )
 
   const pages = result.data.allBlogPage.nodes
 
-  // console.log(options)
   actions.createPage({
     path: basePath,
     component: blogArchiveTemplate,
@@ -145,7 +151,7 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
       component: blogPageTemplate,
       context: {
         pageID: page.id,
-        ogImage: `${page.basePath}.*/${slugify(page.title).replace(
+        ogImage: `/${contentPath}.*/${slugify(page[titleField]).replace(
           "*",
           "*"
         )}-og.png/`,

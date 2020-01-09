@@ -23,6 +23,7 @@ exports.onCreateNode = async ({ store, node }, options) => {
     ogHBandWidth,
     ogTextColor,
     ogTextOpacity,
+    titleField,
   } = withDefaults(options)
 
   const dir = path.join(program.directory, contentPath, imagePath)
@@ -30,7 +31,7 @@ exports.onCreateNode = async ({ store, node }, options) => {
 
   // Only BlogPage nodes within the expected namespace.
   if (node.internal.type === "BlogPage" && node.sourceInstanceName === ns) {
-    const name = slugify(node.title)
+    const name = slugify(node[titleField])
 
     const img = fs.existsSync(ogBackgroundImage)
       ? await Jimp.read(ogBackgroundImage)
@@ -68,7 +69,7 @@ exports.onCreateNode = async ({ store, node }, options) => {
       0,
       0,
       {
-        text: node.title,
+        text: node[titleField],
         alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
         alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE,
       },

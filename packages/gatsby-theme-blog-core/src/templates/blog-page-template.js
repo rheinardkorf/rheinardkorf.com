@@ -5,6 +5,7 @@ export const query = graphql`
   query($pageID: String, $ogImage: String) {
     page: blogPage(id: { eq: $pageID }) {
       title
+      seoTitle
       updated(fromNow: true)
       body
       sourceInstanceName
@@ -21,5 +22,4 @@ export const query = graphql`
     }
   }
 `
-
 export default BlogPage

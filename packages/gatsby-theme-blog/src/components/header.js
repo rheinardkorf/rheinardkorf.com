@@ -71,10 +71,10 @@ const Header = () => {
               sx={{
                 variant: "layout.Header.Container.Navigation.Item",
               }}
+              key={item.name}
             >
               <Link
                 to={item.url}
-                key={item.name}
                 sx={{
                   variant: "layout.Header.Container.Navigation.Item.Link",
                 }}

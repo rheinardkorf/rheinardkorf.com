@@ -1,5 +1,5 @@
 ---
-title: The personal site of one Rheinard Korf
+seoTitle: The personal site of one Rheinard Korf
 ---
 
 # Welcome!
