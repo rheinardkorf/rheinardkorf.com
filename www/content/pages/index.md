@@ -1,5 +1,6 @@
 ---
 seoTitle: The personal site of one Rheinard Korf
+seoDescription: My name is Rheinard Korf and this is my public "out-brain".
 ---
 
 # Welcome!

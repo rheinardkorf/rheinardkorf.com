@@ -25,6 +25,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             updated: Date! @dateformat
             body: String!
             excerpt: String!
+            seoDescription: String
             sourceInstanceName: String!
             basePath: String!
         }
@@ -51,6 +52,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }, options) => {
       title: node.frontmatter.title || "",
       seoTitle:
         node.frontmatter.seoTitle || node.frontmatter.title || parent.name,
+      seoDescription: node.frontmatter.seoDescription || null,
       updated: parent.modifiedTime,
       path: pagePath,
       parent: node.id,

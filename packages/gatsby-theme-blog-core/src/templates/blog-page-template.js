@@ -6,8 +6,10 @@ export const query = graphql`
     page: blogPage(id: { eq: $pageID }) {
       title
       seoTitle
+      seoDescription
       updated(fromNow: true)
       body
+      excerpt
       sourceInstanceName
     }
     ogImage: file(absolutePath: { regex: $ogImage }) {
