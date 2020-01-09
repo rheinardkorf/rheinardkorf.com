@@ -3,7 +3,7 @@ module.exports = {
     title: `Rheinard Korf`,
     author: `Rheinard Korf`,
     description: `A personal blog to explore what motivates, drives and excites me (and hopefully someone else).`,
-    // domain: `http://rheinardkorf.com/`,
+    domain: `https://rheinard-korf-blog.netlify.com/`,
     primaryNav: [
       {
         name: `Posts`,
