@@ -27,6 +27,10 @@ function SEO({ description, lang, meta, keywords, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  var img = image.match(/^http(s):\/\//)
+    ? image
+    : (site.siteMetadata.domain + "/" + image).replace("///", "/")
+
   return (
     <Helmet
       htmlAttributes={{
@@ -53,7 +57,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           property: `og:image`,
-          content: (site.siteMetadata.domain + "/" + image).replace("///", "/"),
+          content: img,
         },
         {
           name: `twitter:card`,
@@ -73,7 +77,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           property: `twitter:image`,
-          content: (site.siteMetadata.domain + "/" + image).replace("///", "/"),
+          content: img,
         },
       ]
         .concat(

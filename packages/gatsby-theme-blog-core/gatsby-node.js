@@ -108,9 +108,15 @@ exports.createResolvers = ({ createResolvers }) => {
 }
 
 exports.createPages = async ({ actions, graphql, reporter }, options) => {
-  const { ns, basePath, description, titleField, contentPath } = withDefaults(
-    options
-  )
+  const {
+    ns,
+    basePath,
+    description,
+    titleField,
+    contentPath,
+    useCloudinary,
+    cloudinaryFolder,
+  } = withDefaults(options)
 
   const result = await graphql(`
     query {
@@ -132,6 +138,9 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
   }
 
   const blogPageTemplate = require.resolve("./src/templates/blog-page-template")
+  const blogPageTemplateCloudinary = require.resolve(
+    "./src/templates/blog-page-template-cloudinary"
+  )
   const blogArchiveTemplate = require.resolve(
     "./src/templates/blog-archive-template"
   )
@@ -148,15 +157,21 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
   })
 
   pages.forEach(page => {
+    console.log(`${slugify(page[titleField]).replace("*", "*")}-og`)
     actions.createPage({
       path: page.path,
-      component: blogPageTemplate,
+      component: useCloudinary ? blogPageTemplateCloudinary : blogPageTemplate,
       context: {
         pageID: page.id,
-        ogImage: `/${contentPath}.*/${slugify(page[titleField]).replace(
-          "*",
-          "*"
-        )}-og.png/`,
+        ogImage: useCloudinary
+          ? `${cloudinaryFolder}/${slugify(page[titleField]).replace(
+              "*",
+              "*"
+            )}-og`
+          : `/${contentPath}.*/${slugify(page[titleField]).replace(
+              "*",
+              "*"
+            )}-og.png/`,
         pagePath: page.path,
       },
     })

@@ -7,12 +7,11 @@ import { Styled } from "theme-ui"
 
 const BlogPage = ({ path, data }) => {
   const { page, ogImage } = data
-
   return (
     <Layout>
       <SEO
         title={page.seoTitle}
-        image={ogImage ? ogImage.childImageSharp.fixed.src : null}
+        image={ogImage ? ogImage.asset.fixed.src : null}
         description={page.seoDescription || page.excerpt}
       />
       <Styled.h1>{page.title}</Styled.h1>

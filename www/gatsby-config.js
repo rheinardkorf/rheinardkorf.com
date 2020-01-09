@@ -1,3 +1,8 @@
+// Load the environment variables.
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Rheinard Korf`,
@@ -45,6 +50,8 @@ module.exports = {
         contentPath: "content/pages",
         basePath: "/",
         ns: "@korf/gatsby-theme-blog/pages",
+        useCloudinary: true,
+        cloudinaryFolder: "testing",
       },
     },
     {

@@ -12,16 +12,17 @@ export const query = graphql`
       excerpt
       sourceInstanceName
     }
-    ogImage: file(absolutePath: { regex: $ogImage }) {
-      asset: childImageSharp {
-        fixed(width: 1200, height: 630) {
-          ...GatsbyImageSharpFixed
+    ogImage: file(name: { eq: $ogImage }) {
+      asset: childCloudinaryAsset {
+        fixed(width: 1200) {
+          ...CloudinaryAssetFixed
         }
         fluid {
-          ...GatsbyImageSharpFluid
+          ...CloudinaryAssetFluid
         }
       }
     }
   }
 `
+
 export default BlogPage
