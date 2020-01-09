@@ -13,7 +13,7 @@ const BlogPage = ({ path, data }) => {
       <SEO
         title={page.seoTitle}
         image={ogImage ? ogImage.childImageSharp.fixed.src : null}
-        description={page.seoDescription}
+        description={page.seoDescription || page.excerpt}
       />
       <Styled.h1>{page.title}</Styled.h1>
       <MDXRenderer>{page.body}</MDXRenderer>
