@@ -27,9 +27,14 @@ function SEO({ description, lang, meta, keywords, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  var img = image.match(/^http(s):\/\//)
-    ? image
-    : (site.siteMetadata.domain + "/" + image).replace("///", "/")
+  var img = ""
+
+  console.log(image)
+  if (image) {
+    img = image.match(/^http(s):\/\//)
+      ? image
+      : (site.siteMetadata.domain + "/" + image).replace("///", "/")
+  }
 
   return (
     <Helmet

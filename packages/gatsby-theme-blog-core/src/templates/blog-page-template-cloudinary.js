@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import BlogPage from "../components/blog-page"
 
 export const query = graphql`
-  query($pageID: String, $ogImage: String) {
+  query($pageID: String, $ogImage: String, $sourceInstanceName: String) {
     page: blogPage(id: { eq: $pageID }) {
       title
       seoTitle
@@ -12,7 +12,10 @@ export const query = graphql`
       excerpt
       sourceInstanceName
     }
-    ogImage: file(name: { eq: $ogImage }) {
+    ogImage: file(
+      sourceInstanceName: { eq: $sourceInstanceName }
+      name: { eq: $ogImage }
+    ) {
       asset: childCloudinaryAsset {
         fixed(width: 1200) {
           ...CloudinaryAssetFixed

@@ -157,21 +157,19 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
   })
 
   pages.forEach(page => {
-    console.log(`${slugify(page[titleField]).replace("*", "*")}-og`)
+    const ogImage = useCloudinary
+      ? `${slugify(page[titleField]).replace("*", "*")}-og`
+      : `/${contentPath}.*/${slugify(page[titleField]).replace(
+          "*",
+          "*"
+        )}-og.png/`
+
     actions.createPage({
       path: page.path,
       component: useCloudinary ? blogPageTemplateCloudinary : blogPageTemplate,
       context: {
         pageID: page.id,
-        ogImage: useCloudinary
-          ? `${cloudinaryFolder}/${slugify(page[titleField]).replace(
-              "*",
-              "*"
-            )}-og`
-          : `/${contentPath}.*/${slugify(page[titleField]).replace(
-              "*",
-              "*"
-            )}-og.png/`,
+        ogImage,
         pagePath: page.path,
       },
     })

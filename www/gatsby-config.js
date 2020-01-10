@@ -50,8 +50,8 @@ module.exports = {
         contentPath: "content/pages",
         basePath: "/",
         ns: "@korf/gatsby-theme-blog/pages",
-        useCloudinary: true,
-        cloudinaryFolder: "testing",
+        // useCloudinary: true,
+        // cloudinaryFolder: "rheinardkorf.com/images/pages",
       },
     },
     {
@@ -62,6 +62,8 @@ module.exports = {
         basePath: "/posts/",
         useExternalMDX: true,
         ns: "@korf/gatsby-theme-blog/posts",
+        useCloudinary: true,
+        cloudinaryFolder: "rheinardkorf.com/images/posts",
       },
     },
     {
@@ -72,6 +74,8 @@ module.exports = {
         basePath: "/tips/",
         useExternalMDX: true,
         ns: "@korf/gatsby-theme-blog/tips",
+        useCloudinary: true,
+        cloudinaryFolder: "rheinardkorf.com/images/tips",
       },
     },
     {
@@ -82,6 +86,8 @@ module.exports = {
         basePath: "/notes/",
         useExternalMDX: true,
         ns: "@korf/gatsby-theme-blog/notes",
+        useCloudinary: true,
+        cloudinaryFolder: "rheinardkorf.com/images/notes",
       },
     },
     {
@@ -92,6 +98,8 @@ module.exports = {
         basePath: "/ashes/",
         useExternalMDX: true,
         ns: "@korf/gatsby-theme-blog/ashes",
+        useCloudinary: true,
+        cloudinaryFolder: "rheinardkorf.com/images/ashes",
       },
     },
   ],
