@@ -3,8 +3,6 @@ module.exports = ({
   basePath = "/",
   contentPath = "blog",
   useExternalMDX = false,
-  useCloudinary = false,
-  cloudinaryFolder = "gatsby-cloudinary",
   ns = "@korf/gatsby-theme-blog",
   titleField = "seoTitle",
 }) => ({
@@ -12,8 +10,6 @@ module.exports = ({
   basePath,
   contentPath,
   useExternalMDX,
-  useCloudinary,
-  cloudinaryFolder,
   ns,
   titleField,
 })

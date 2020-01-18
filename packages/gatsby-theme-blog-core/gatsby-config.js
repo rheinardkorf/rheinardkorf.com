@@ -2,13 +2,7 @@
 const withDefaults = require("./utils/default-options")
 
 module.exports = options => {
-  const {
-    contentPath,
-    useExternalMDX,
-    useCloudinary,
-    cloudinaryFolder,
-    ns,
-  } = withDefaults(options)
+  const { contentPath, useExternalMDX, ns } = withDefaults(options)
 
   return {
     plugins: [
@@ -24,6 +18,7 @@ module.exports = options => {
         options: {
           extensions: [".mdx", ".md"],
           gatsbyRemarkPlugins: [
+            `gatsby-remark-embedder`,
             {
               resolve: "gatsby-remark-images",
               options: {
@@ -64,22 +59,8 @@ module.exports = options => {
           plugins: ["gatsby-remark-images"],
         },
       },
-      !useCloudinary && "gatsby-transformer-sharp",
-      !useCloudinary && "gatsby-plugin-sharp",
-      useCloudinary && {
-        resolve: "@korf/gatsby-transformer-cloudinary",
-        options: {
-          cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-          apiKey: process.env.CLOUDINARY_API_KEY,
-          apiSecret: process.env.CLOUDINARY_API_SECRET,
-
-          // This folder will be created if it doesn’t exist.
-          uploadFolder: cloudinaryFolder,
-
-          // Online upload if it matches `name` on gatsby-source-filesystem.
-          sourceName: ns,
-        },
-      },
+      "gatsby-transformer-sharp",
+      "gatsby-plugin-sharp",
       "gatsby-image",
     ].filter(Boolean),
   }

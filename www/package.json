@@ -6,7 +6,6 @@
   "private": true,
   "dependencies": {
     "@korf/gatsby-theme-blog": "*",
-    "@korf/gatsby-transformer-cloudinary": "*",
     "gatsby": "^2.17.10",
     "gatsby-plugin-sharp": "^2.3.12",
     "gatsby-transformer-sharp": "^2.3.11",

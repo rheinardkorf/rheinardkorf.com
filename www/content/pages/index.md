@@ -1,32 +1,23 @@
 ---
-seoTitle: The personal site of one Rheinard Korf
-seoDescription: My name is Rheinard Korf and this is my public "out-brain".
+seoTitle: The "Out-Brain" of Rheinard Korf
+seoDescription: I’m Rheinard Korf. I work remotely doing things that interest me.
 ---
 
-# Welcome!
+Hello world 👋
 
-My name is **Rheinard Korf** and this is my public "out-brain". 
+I'm Rheinard Korf. I work remotely doing things that interest me. Like software development, solution design and constantly thinking about education. 
 
-<!-- I work remotely and Thomas De Moor did a great write up about me and  
-[the benefits of working remotely as a parent](https://x-team.com/blog/interview-rheinard-korf/). -->
+I'm a bit of a polyglot when it comes to programming languages and love to always learn new ones. 
 
-To avoid a long-winded intro, this is what you'll find out about me on all my public profiles:
+I'm a Christian, a Huband and a Father of three. The nature of my work means I get to spent plenty of time with my family.
 
-```
-👤 Christian, Husband, Father, Coder  
-📌 Go, JavaScript, GraphQL  
-🔖 API dev, Language syntax, Serverless  
-💼 Solutions Architect, Software Engineer  
-```
-
-<!--Here I write [Posts](/posts/) about things I care about; share some of my learning [Notes](/notes/); and I post [Tips](/tips/) about things I think people should know about. For kicks I also revived some of my legacy posts from the [ashes](/ashes/). -->
-
-Here I will write [Posts](/posts/) about things I care about; I will share some of my learning **Notes**; and I will post **Tips** about things I think people should know about. While I'm getting this sorted out I have revived some of my legacy posts from the [ashes](/ashes/) for kicks.
+This site is my public "out-brain". You're invited to hang around and see how I tick. It is likely to not be completely coherent.
 
 ---------------------------------------------
 
 **The Latest:**
 
+* [Failing Forwardish in Style](/posts/failing-forwardish)
 * [Live Stream Learning](/posts/live-stream-learning)  
 * [So I am a streamer now](/posts/so-i-am-a-streamer-now)  
 

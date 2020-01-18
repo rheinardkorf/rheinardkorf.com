@@ -3504,15 +3504,6 @@ clone-response@1.0.2, clone-response@^1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
-cloudinary@^1.15.0:
-  version "1.18.1"
-  resolved "https://registry.yarnpkg.com/cloudinary/-/cloudinary-1.18.1.tgz#b2963ce3816d688f5ae17b587d7743af734344ee"
-  integrity sha512-k9ZozOslI68JNQ/1KeS8oU+aezDHZ0+9si8g+5PgvzfYsDILy8s68lnr59rlOO7SogeA7i+eZYFddf1/rN5tBw==
-  dependencies:
-    lodash "^4.17.11"
-    q "^1.5.1"
-    typescript "^2.9.2"
-
 coa@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/coa/-/coa-2.0.2.tgz#43f6c21151b4ef2bf57187db0d73de229e3e7ec3"
@@ -6430,6 +6421,15 @@ gatsby-remark-copy-linked-files@^2.1.28:
     path-is-inside "^1.0.2"
     probe-image-size "^4.1.1"
     unist-util-visit "^1.4.1"
+
+gatsby-remark-embedder@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embedder/-/gatsby-remark-embedder-1.7.0.tgz#8b13afc1e60ecce456282f070b62a4db8b59162a"
+  integrity sha512-cVjJ7EM6x713bFdAVEuHo3QEkTe1IBSx6aY7FR76V/uP9V6AWpSwSfeKbJqTB+bWqd18C+atM4xON4DHyiDyxA==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+    node-fetch "^2.6.0"
+    unist-util-visit "^2.0.1"
 
 gatsby-remark-images@^3.1.29:
   version "3.1.33"
@@ -11299,7 +11299,7 @@ puppeteer@^1.12.2:
     rimraf "^2.6.1"
     ws "^6.1.0"
 
-q@^1.1.2, q@^1.5.1:
+q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
@@ -13763,11 +13763,6 @@ typeface-inter@^3.10.0:
   resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.10.0.tgz#04a55d62e2dc3f60db3afab5d8a547e067692bc6"
   integrity sha512-WuXE+TaJLB8pdMuvIVY3LfT5UQqndR8+Js0xfhNpdXlsEx0Abwd1bzg4w4YWl2eoOmmLYrRpx6UJJ7a7/q6wZQ==
 
-typescript@^2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
-  integrity sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
-
 ua-parser-js@^0.7.18:
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
@@ -14055,6 +14050,15 @@ unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.4.0, unist
   integrity sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==
   dependencies:
     unist-util-visit-parents "^2.0.0"
+
+unist-util-visit@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-2.0.1.tgz#b4e1c1cb414250c6b3cb386b8e461d79312108ae"
+  integrity sha512-bEDa5S/O8WRDeI1mLaMoKuFFi89AjF+UAoMNxO+bbVdo06q+53Vhq4iiv1PenL6Rx1ZxIpXIzqZoc5HD2I1oMA==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-is "^4.0.0"
+    unist-util-visit-parents "^3.0.0"
 
 universalify@^0.1.0:
   version "0.1.2"
