@@ -14,10 +14,10 @@ module.exports = {
         name: `Posts`,
         url: `/posts/`,
       },
-      // {
-      //   name: `Notes`,
-      //   url: `/notes/`,
-      // },
+      {
+        name: `Notes`,
+        url: `/notes/`,
+      },
       // {
       //   name: `Tips`,
       //   url: `/tips/`,
