@@ -11,5 +11,7 @@
   "git.postCommitCommand": "sync",
   "workbench.colorCustomizations": {
     "terminal.foreground": "#acacac"
-  }
+  },
+  "vscodeMarkdownNotes.newNoteTemplate": "---\ntitle: ${noteName}\ndate: ${timestam}\n---\n\n",
+  "vscodeMarkdownNotes.noteCompletionConvention": "noExtension"
 }
