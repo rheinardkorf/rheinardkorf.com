@@ -12,6 +12,8 @@
   "workbench.colorCustomizations": {
     "terminal.foreground": "#acacac"
   },
-  "vscodeMarkdownNotes.newNoteTemplate": "---\ntitle: ${noteName}\ndate: ${timestam}\n---\n\n",
-  "vscodeMarkdownNotes.noteCompletionConvention": "noExtension"
+  "vscodeMarkdownNotes.newNoteTemplate": "---\ntitle: ${noteName}\ndate: ${timestamp}\n---\n\n",
+  "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
+  "workbench.editor.enablePreview": false,
+  "markdown.extension.preview.autoShowPreviewToSide": false
 }

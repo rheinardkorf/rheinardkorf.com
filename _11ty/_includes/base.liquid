@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>{{title}} | {{siteMetadata.title}}</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="logo"><a href="/">Rheinard <div class="fox"></div> Korf</a></div>
+            <div class="menu">
+                <a href="{{siteMetadata.social.twitter}}">Twitter</a>
+                <a href="{{siteMetadata.social.github}}">GitHub</a>
+                <a href="{{siteMetadata.social.linkedin}}">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            {% if title and hideTitle == false or hideTitle == nil %}<h1>{{title}}</h1>{% endif %}
+            {{content}}
+        </div>
+    </main>
+    <footer><div class="content">&copy;2020 Rheinard Korf</div></footer>
+</body>
+</html>
