@@ -158,6 +158,10 @@ a.social svg {
 	display: inline-block;
 }
 
+ul, ol {
+  margin: 2vh 0 2vh 0;
+}
+
 ul {
   display: table;
   list-style: none;
