@@ -7,6 +7,7 @@
 	--unit: calc((var(--size) / var(--fox-o-h)) * 10px);
   --primary-color: rgb(219, 47, 47);
   --fore-color: rgb( 64, 64, 64);
+  --fore-color-dim: rgba( 64, 64, 64, 0.2);
 	--fox-shape: polygon(
 		0 0,
 		35.66% 26.289%,
@@ -161,22 +162,30 @@ ul {
   display: table;
   list-style: none;
   list-style-position: outside;
-
 }
 
-li {
+ol {
+  display: table;
+  list-style-position: outside;
+}
+ol li {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul li {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 0.5rem;
 }
-li::before {
+ul li::before {
   display: block;
   float: left;
   position: relative;
   margin-left: -1.3rem;
   top: 0.3rem;
   content: '';
-  background-color: var(--fore-color);
+  background-color: var(--fore-color-dim);
   width:calc(16px * var(--fox-aspect));
   height:16px;
   min-width:calc(16px * var(--fox-aspect));
