@@ -24,7 +24,7 @@
     "gatsby-remark-smartypants": "^2.1.14",
     "gatsby-source-filesystem": "^2.1.35",
     "mkdirp": "^0.5.1",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.21.0",
     "remark-slug": "^5.1.2"
   }
 }
