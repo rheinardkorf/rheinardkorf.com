@@ -10,7 +10,9 @@
   "git.enableSmartCommit": true,
   "git.postCommitCommand": "sync",
   "workbench.colorCustomizations": {
-    "terminal.foreground": "#acacac"
+    "terminal.foreground": "#acacac",
+    "titleBar.activeBackground": "#db662f",
+    "titleBar.inactiveBackground": "#db662f"
   },
   "vscodeMarkdownNotes.newNoteTemplate": "---\ntitle: ${noteName}\ndate: ${timestamp}\n---\n\n",
   "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",

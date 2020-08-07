@@ -1,0 +1,14 @@
+{
+  "name": "rheinard-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rheinardkorf/rheinardkorf.com.git",
+  "author": "Rheinard Korf <rheinard@thekorfs.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "eleventy --serve --watch --config=_11ty/.eleventy.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}

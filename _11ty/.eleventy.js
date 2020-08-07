@@ -1,10 +1,11 @@
 module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({ '_11ty/css': 'css' })
+    eleventyConfig.addPassthroughCopy('images')
 
     eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
         if (outputPath.endsWith(".html")) {
             // Remove the extra [ ] added by Foam.
-            return content.replace(/\[<a/g, '<a').replace(/\/a>]/g,'/a>');
+            return content.replace(/\[<a/g, '<a').replace(/\/a>]/g,'/a>').replace(/src="images/g, 'src="../images')
         }
 
         return content;
