@@ -5,9 +5,9 @@ date: 2020-08-04T16:16:59.469Z
 
 ![Seems like a nice place.](images/a2eade4610ae3d6d869e9f013c5a4fc4b37811de3684c3c0132f2164293d09de.png)  
 
-Here is where I hang out everyday. I built this in the back of my garage in 2014/2015. I first set foot in it as an office on February 1st, 2015. This was also my very first day starting work at [XWP](https://xwp.co).
+Here is where I hang out everyday. I built this in the back of my garage in 2014/2015. I first set foot in it as an office on February 1st, 2015. This was also my very first day of starting work at [XWP](https://xwp.co).
 
-This space has evolved over time. Things have been added, things removed. Equipment purchased and sold (and there will be more hopefully soon 🤞🏻). But here is a list of my current gear:
+This space has evolved. Things have been added, things removed. Equipment purchased and sold (and there will be more hopefully soon 🤞🏻). But here is a list of my current gear:
 
 * MacBook Pro 13"
 * Mic: Blue Ember XLR

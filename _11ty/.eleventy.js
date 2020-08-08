@@ -1,4 +1,5 @@
 const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({ '_11ty/css': 'css' })
@@ -46,6 +47,8 @@ module.exports = (eleventyConfig) => {
           }
         },
       });
+
+      eleventyConfig.addPlugin(syntaxHighlight);
 
     // After other transforms.
     eleventyConfig.addTransform("contentFixPost", function (content, outputPath) {

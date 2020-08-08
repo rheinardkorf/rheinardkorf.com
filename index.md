@@ -11,7 +11,7 @@ I am a software engineer and architect working on enterprise solutions. I have b
 
 In this site I will attempt to capture as many of my thoughts, ideas and learnings as I possibly can. My hope is that they may benefit you also.
 
-### Thinking about this site...
+## Thinking about this site...
 
 * Building a personal site is hard, but I'm [[overcoming the complexity]].
 * I have adopted the no-blog blogging trend by [[building my digital garden]].
@@ -19,7 +19,7 @@ In this site I will attempt to capture as many of my thoughts, ideas and learnin
 * The origin story of my strange blood orange logo: [[What does the fox say?]]
 <!-- * How I started [[building a digital garden with vscode and 11ty]]. -->
 
-### Down the technical rabbit hole...
+## Down the technical rabbit hole...
 
 * Lofty ambitions to change an ecosystem while [[building Tide for WordPress]] with Go.
 <!-- * When the SDK is outdate, maybe you can [[use WordPress as a trusted proxy for an existing API]]. -->
@@ -27,11 +27,11 @@ In this site I will attempt to capture as many of my thoughts, ideas and learnin
 <!-- * Things would've been so much easier had I known about [[domain-driven development]]. -->
 <!-- * If you're not careful you might find yourself [[building an Intranet with WordPress Multisite]]. -->
 
-### Just another day "at the office" 🤣
+## Just another day "at the office" 🤣
 
 * Been working remote for a few years now (pre-Covid). Here is [[a peek into my workspace]].
 
-### TODO:
+## TODO:
 
 🔧 Add OG images.  
 🔧 Add SEO meta.  
