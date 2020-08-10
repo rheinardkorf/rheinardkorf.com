@@ -79,15 +79,15 @@ module.exports = async (props) => {
 
     const imageFile = path.join(output, imageFilename);
 
+    if ( fs.existsSync(imageFile) ) {
+        return url;
+    }
+
     console.log(`Writing ${imageFile}`);
 
     // Remove tags that should not be used.
     const tagSet = excludeTags ? new Set(excludeTags) : false;
     const includeTags = tags && tagSet ? [...new Set([...tags].filter(x => !tagSet.has(x)))] : false;
-
-    if ( fs.existsSync(imageFile) ) {
-        // return url;
-    }
 
     // Image from background image or color.
     const img = backgroundImage.clone();
