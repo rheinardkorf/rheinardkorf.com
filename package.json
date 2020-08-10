@@ -7,11 +7,16 @@
   "license": "MIT",
   "scripts": {
     "serve": "eleventy --serve --watch --config=_11ty/.eleventy.js",
-    "build": "eleventy --config=_11ty/.eleventy.js"
+    "build": "eleventy --config=_11ty/.eleventy.js",
+    "create-font": "msdf-bmfont"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "eleventy-plugin-local-respimg": "^0.3.1"
+    "cheerio": "^1.0.0-rc.3",
+    "deasync": "^0.1.20",
+    "eleventy-plugin-local-respimg": "^0.3.1",
+    "jimp": "^0.16.0",
+    "msdf-bmfont-xml": "^2.5.4"
   }
 }

@@ -1,5 +1,7 @@
 const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const ogPlugin = require("./lib/og-plugin");
+const path = require('path');
 
 module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({ '_11ty/css': 'css' })
@@ -56,6 +58,10 @@ module.exports = (eleventyConfig) => {
             return fixContent(content);
         }
         return content;
+    });
+
+    eleventyConfig.addPlugin(ogPlugin, {
+        output: path.join("_site/images")
     });
 
     return {
