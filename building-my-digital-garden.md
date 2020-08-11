@@ -13,6 +13,6 @@ Here are some take aways for me as I've been joining and observing conversations
 * **Plants have life-cycles**. Just like plants in a garden may die. Let your old content die. When the content is mature it might need transplanting, splicing, propagation. A digital garden is your permission to experiment. **Be the mad digital botanist you want to be**. If people love something, do more of it. If they hate it, get rid of it. If something grows beyond the boundaries of this garden, find it a new place to flourish.
 * **Ignore everything in this note so far and do you!** Ultimately, your garden is your garden. Do what works for you. Grow what you want to grow.
 
-With all of these ideas I was inspired to finally build my own digital garden. Now that I'm [over the friction of the tools](https://rheinardkorf.com/overcoming-the-complexity/) I get to play and make mistakes. I get to share as sparks turn into cohesive thoughts and when they don't. I get to learn and discover while doing things in public.
+With all of these ideas I was inspired to finally build my own digital garden. Now that I'm [over the friction of the tools](overcoming-the-complexity) I get to play and make mistakes. I get to share as sparks turn into cohesive thoughts and when they don't. I get to learn and discover while doing things in public.
 
 > Be the mad digital botanist you want to be.

@@ -14,6 +14,8 @@ module.exports = (eleventyConfig) => {
         content = content
             .replace(/"images/g, '"../images')
             .replace(/ images/g, ' ../images');
+        // Fix relative links.
+        content = content.replace(/href="(?!https?:\/\/)/g, 'href="../');
 
         return content;
     }
