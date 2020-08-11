@@ -1,7 +1,7 @@
 ---
 title: The "Out-Brain" of Rheinard Korf
 hideTitle: true
-seoTitle: The "Out-Brain" of Rheinard Korf
+seoTitle: Software Engineer and Architect
 seoDescription: I’m Rheinard Korf. I work remotely doing things that interest me.
 ---
 
