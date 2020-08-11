@@ -9,7 +9,7 @@ module.exports = (config) => {
         },
         analytics: {
             google: {
-                trackingID: 'UA-175194815-1'
+                trackingID: 'UA-46266601-4'
             }
         }
     }
