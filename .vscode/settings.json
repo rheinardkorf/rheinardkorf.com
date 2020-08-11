@@ -17,5 +17,11 @@
   "vscodeMarkdownNotes.newNoteTemplate": "---\ntitle: ${noteName}\ndate: ${timestamp}\n---\n\n",
   "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
   "workbench.editor.enablePreview": false,
-  "markdown.extension.preview.autoShowPreviewToSide": false
+  "markdown.extension.preview.autoShowPreviewToSide": false,
+  "grammarly.userWords": [
+    "Covid",
+    "seoDescription",
+    "seoTitle",
+    "vscode"
+  ]
 }
