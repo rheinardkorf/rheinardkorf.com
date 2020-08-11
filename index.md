@@ -1,5 +1,5 @@
 ---
-title: The "Out-Brain" of Rheinard Korf
+title: Hello, I am Rheinard. I am a Software Engineer.
 hideTitle: true
 seoTitle: Software Engineer and Architect
 seoDescription: I’m Rheinard Korf. I work remotely doing things that interest me.
