@@ -17,6 +17,14 @@
         <link href="/css/prism.css" rel="stylesheet">
     </noscript>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ siteMetadata.analytics.google.trackingID }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ siteMetadata.analytics.google.trackingID }}');
+    </script>
 </head>
 <body>
     <header>

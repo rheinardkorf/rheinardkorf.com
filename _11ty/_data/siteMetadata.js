@@ -6,6 +6,11 @@ module.exports = (config) => {
             twitter: 'https://twitter.com/rheinardkorf',
             github: 'https://github.com/rheinardkorf',
             linkedin: 'https://www.linkedin.com/in/rheinardkorf'
+        },
+        analytics: {
+            google: {
+                trackingID: 'UA-175194815-1'
+            }
         }
     }
 }
