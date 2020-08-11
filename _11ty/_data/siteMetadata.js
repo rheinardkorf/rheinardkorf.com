@@ -1,7 +1,7 @@
 module.exports = (config) => {
     return {
         title: "RheinardKorf.com",
-        baseUrl: 'http://localhost:8080',
+        baseUrl: 'https://rheinardkorf.com',
         social: {
             twitter: 'https://twitter.com/rheinardkorf',
             github: 'https://github.com/rheinardkorf',
