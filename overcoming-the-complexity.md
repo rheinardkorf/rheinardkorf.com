@@ -1,6 +1,8 @@
 ---
 title: Overcoming the Complexity
 date: 2020-08-04T15:04:33.966Z
+tags:
+    - life
 ---
 
 **TL;DR; of this whole rant is that I am now using Foam and 11ty for my digital garden. It is keeping my content as primary concern and publishing as a secondary.**

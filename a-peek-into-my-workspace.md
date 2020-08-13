@@ -1,6 +1,8 @@
 ---
 title: A Peek into My Workspace
 date: 2020-08-04T16:16:59.469Z
+tags:
+    - life
 ---
 
 ![Seems like a nice place.](images/a2eade4610ae3d6d869e9f013c5a4fc4b37811de3684c3c0132f2164293d09de.png)  

@@ -1,6 +1,8 @@
 ---
 title: Building Tide for WordPress
 date: 2020-08-04T16:19:53.274Z
+tags:
+    - wordpress
 ---
 
 This is the untold story of the birth of [Tide](http://wptide.org/).

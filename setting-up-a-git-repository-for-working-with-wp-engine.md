@@ -1,6 +1,8 @@
 ---
 title: Setting up a Git Repository for Working with WP Engine
 date: 2020-08-13T00:30:36.791Z
+tags:
+    - wordpress
 ---
 
 The following repo structure have worked really well for me:

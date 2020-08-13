@@ -1,6 +1,7 @@
 ---
 title: Quick Critical CSS Check
 date: 2020-08-13T02:10:28.041Z
+hidden: true
 ---
 
 From time to time I might need to *tweak* my **critical CSS**. This note highlights the CSS I'd <em><strong>really like</strong></em> to work.

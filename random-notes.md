@@ -1,6 +1,7 @@
 ---
 title: Random Notes
 date: 2020-08-13T00:29:52.918Z
+hidden: true
 ---
 
 * [[Setting up a Git Repository for working with WP Engine]]

@@ -7,6 +7,12 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({ '_11ty/css': 'css' })
     eleventyConfig.addPassthroughCopy('images')
 
+    eleventyConfig.addCollection("allThings", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("**/*.md").filter((item) => {
+            return item.url !== '/all/' && item.url !== '/' && ! item.data.hidden
+        });
+    });
+
     const fixContent = (content) => {
         // Remove the extra [ ] added by Foam.
         content = content.replace(/\[<a/g, '<a').replace(/\/a>]/g,'/a>')
@@ -15,7 +21,9 @@ module.exports = (eleventyConfig) => {
             .replace(/"images/g, '"../images')
             .replace(/ images/g, ' ../images');
         // Fix relative links.
-        content = content.replace(/href="(?!https?:\/\/)/g, 'href="../');
+        content = content
+            .replace(/href="(?!https?:\/\/)/g, 'href="../')
+            .replace(/href="..\/..\/\//g, 'href="../../');
 
         return content;
     }
@@ -65,6 +73,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(ogPlugin, {
         output: path.join("_site/images")
     });
+
 
     return {
         dir: {

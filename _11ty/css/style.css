@@ -127,7 +127,7 @@ footer {
   border-top: 1px solid rgba(0,0,0,0.2);
 }
 
-header .content {
+footer .content, header .content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -166,6 +166,8 @@ a.social {
 a.social svg {
   position: relative;
   top: 5px;
+  max-width: 1.2rem;
+  max-height: 1.2rem;
   width: 1.2rem;
   height: 1.2rem;
 }
