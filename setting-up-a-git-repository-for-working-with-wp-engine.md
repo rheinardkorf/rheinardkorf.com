@@ -13,7 +13,7 @@ Assuming you clone your repo into your WordPress root, you will need to update y
 
 This example assumes a multisite, but not that hard to adjust for single site. It also assumes you cloned into `wpe-site`. Add the following to `wp-config.php`.
 
-```
+``` php
 define( 'WP_CONTENT_DIR', __DIR__ . '/wpe-site/wp-content/' );
 define( 'WP_CONTENT_URL', 'http://' . DOMAIN_CURRENT_SITE . '/wpe-site/wp-content' );
 define( 'UPLOADS', './wpe-site/wp-content/uploads/' );
