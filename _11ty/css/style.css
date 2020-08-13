@@ -141,14 +141,18 @@ main {
 header .content,
 main .content,
 footer .content {
+  position: relative;
 	margin: auto auto;
 	max-width: var(--max-width);
-	padding: 0 20px;
+  padding: 0 20px;
+}
+
+main {
+  overflow: auto;
 }
 
 .menu {
   font-size: 1.0rem;
-
 }
 
 .menu a {
