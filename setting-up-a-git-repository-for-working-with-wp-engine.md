@@ -18,3 +18,37 @@ define( 'WP_CONTENT_DIR', __DIR__ . '/wpe-site/wp-content/' );
 define( 'WP_CONTENT_URL', 'http://' . DOMAIN_CURRENT_SITE . '/wpe-site/wp-content' );
 define( 'UPLOADS', './wpe-site/wp-content/uploads/' );
 ```
+
+## Setting up the remotes
+
+To deploy to the diffent environments we typically have 3 remotes. They look something like this: `my-site-slug`, `my-site-slugstaging`, `my-site-slugdev`.
+
+Lets hook 'em up:
+
+``` bash
+# Develop
+git remote add my-site-slugdev git@git.wpengine.com:production/my-site-slugdev.git
+
+# Staging
+git remote add my-site-slugstaging git@git.wpengine.com:production/my-site-slugstaging.git
+
+# Production
+git remote add my-site-slug git@git.wpengine.com:production/my-site-slug.git
+```
+
+## Deploying the branches  
+
+Choose a branch for each environment. I'll go with `prod`, `staging` and `develop`. 
+
+Here is how we deploy:
+
+``` bash
+# Development
+git push my-site-slugdev develop:master
+
+# Staging
+git push my-site-slugstaging staging:master
+
+# Production
+git push my-site-slug prod:master
+```
