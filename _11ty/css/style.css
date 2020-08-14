@@ -258,6 +258,26 @@ pre code {
   font-family: monospace;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+thead {
+  background-color: rgba(219, 47, 47,1.0);
+  color: #fff;
+}
+
+tbody tr:nth-child(even){
+  background:rgba(219, 47, 47,0.05);
+}
+
 @media (max-width: 320px) {
   :root {
     --size: 3;
