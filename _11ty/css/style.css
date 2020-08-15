@@ -107,12 +107,11 @@ h6 {
 }
 
 body {
-	display: grid;
+  display: flex;
+  flex-direction: column;
 	height: 100vh;
-	grid-template-rows: auto 1fr auto;
 	padding: 0;
 	margin: 0;
-	overflow-x: hidden;
 	line-height: 1.5;
 	letter-spacing: 0.02rem;
 	margin: 0px;
@@ -120,11 +119,14 @@ body {
 
 header {
   border-bottom: 1px solid rgba(0,0,0,0.2);
+  flex: 1 1 0;
 }
 
 footer {
   margin-top: 1rem;
   border-top: 1px solid rgba(0,0,0,0.2);
+  justify-self: flex-end;
+  flex:1 1 0;
 }
 
 footer .content, header .content {
@@ -135,7 +137,8 @@ footer .content, header .content {
 }
 
 main {
-	margin-top: 2vh;
+  margin-top: 2vh;
+  flex: 50 0 0;
 }
 
 header .content,
@@ -145,10 +148,6 @@ footer .content {
 	margin: auto auto;
 	max-width: var(--max-width);
   padding: 0 20px;
-}
-
-main {
-  overflow: auto;
 }
 
 .menu {
