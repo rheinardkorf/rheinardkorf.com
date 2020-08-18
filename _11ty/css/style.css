@@ -286,6 +286,22 @@ tbody tr:nth-child(even){
   background:rgba(219, 47, 47,0.05);
 }
 
+
+picture + cite {
+  font-size: 0.8rem;
+  font-style: oblique;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: var(--fore-color);
+}
+
+picture + cite a {
+  color: var(--fore-color);
+  border-color: var(--fore-color);
+}
+
 @media (max-width: 320px) {
   :root {
     --size: 3;

@@ -15,8 +15,9 @@ Lets kick it off:
 
 * Building a personal site is hard, but I'm [[overcoming the complexity]].
 * I have adopted the no-blog blogging trend by [[building my digital garden]].
-* I have had so many restarts, its time to [[put the past in the behind]] (aka, live and let die).
+* I have had so many restarts, its time to [[put the past in the behind]].
 * The origin story of my strange blood orange logo: [[What does the fox say?]]
+* Here are some reasons why I chose [[Foam as my content engine]]
 * Lofty ambitions to change an ecosystem while [[building Tide for WordPress]] with Go.
 * Been working remote for a few years now (pre-Covid). Here is [[a peek into my workspace]].
 <!-- * How I started [[building a digital garden with vscode and 11ty]]. -->
@@ -32,6 +33,7 @@ I also have a list of [[random notes]] for things that don't have a home yet.
 [building my digital garden]: building-my-digital-garden "building-my-digital-garden"
 [put the past in the behind]: put-the-past-in-the-behind "put-the-past-in-the-behind"
 [What does the fox say?]: what-does-the-fox-say "what-does-the-fox-say"
+[Foam as my content engine]: foam-as-my-content-engine "foam-as-my-content-engine"
 [building Tide for WordPress]: building-tide-for-wordpress "building-tide-for-wordpress"
 [a peek into my workspace]: a-peek-into-my-workspace "a-peek-into-my-workspace"
 [random notes]: random-notes "random-notes"
