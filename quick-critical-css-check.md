@@ -8,7 +8,7 @@ From time to time I might need to *tweak* my **critical CSS**. This note highlig
 
 ## Secondary Heading with image.
 
-![Image check](images/8196d99a0fd4c77033fe34ca643b0504e34bf07e298701d87d6dc2b32d7df852.png)  
+![Image check](images/8196d99a0fd4c77033fe34ca643b0504e34bf07e298701d87d6dc2b32d7df852.png)<cite>Cited photo <https://rheinardkorf.com/quick-critical-css-check/></cite>  
 
 ### Third level heading.
 
