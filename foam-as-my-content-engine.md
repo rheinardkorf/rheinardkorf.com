@@ -2,6 +2,7 @@
 title: Foam as My Content Engine
 date: 2020-08-18T14:14:15.561Z
 socialTitle: Here is why I chose Foam as my "Content Engine".
+socialDescription: Foam has become my goto place for writing anything! I think you might like it too.
 ---
 ![Duck into the water!](images/6f8ad37b23da3a4091eb834570cf2103904340f12b3eabc3ff9d1db873c0993e.png "Photo  by https://unsplash.com/@isaacquesada")<cite>Photo by <https://unsplash.com/@isaacquesada></cite>
 
