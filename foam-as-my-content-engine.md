@@ -5,7 +5,7 @@ socialTitle: Here is why I chose Foam as my "Content Engine".
 ---
 ![Duck into the water!](images/6f8ad37b23da3a4091eb834570cf2103904340f12b3eabc3ff9d1db873c0993e.png "Photo  by https://unsplash.com/@isaacquesada")<cite>Photo by <https://unsplash.com/@isaacquesada></cite>
 
-> Foam is a personal knowledge management and sharing system inspired by Roam Research, built on Visual Studio Code and GitHub. -- https://foambubble.github.io/foam/
+> Foam is a personal knowledge management and sharing system inspired by Roam Research, built on Visual Studio Code and GitHub. -- <https://foambubble.github.io/foam/>
 
 That's the official statement, but here is a secret: **Foam isn't a thing (yet)**. It's just a curated selection of Visual Studio Code extensions that gives us a fun way to collect and link our thoughts.
 
