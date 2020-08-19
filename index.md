@@ -9,9 +9,9 @@ seoDescription: I’m Rheinard Korf. I work remotely doing things that interest 
 
 I am a software engineer and architect working on enterprise solutions. I have been fortunate to work with various languages, deployment stacks and development models.
 
-In this site I will attempt to capture as many of my thoughts, ideas and learnings as I possibly can. My hope is that they may benefit you also.
+In this site I will attempt to capture as many of my thoughts, ideas, and learnings as possible. I hope that they may benefit you also.
 
-Lets kick it off:
+Let's kick it off:
 
 * Building a personal site is hard, but I'm [[overcoming the complexity]].
 * I have adopted the no-blog blogging trend by [[building my digital garden]].
