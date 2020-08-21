@@ -77,7 +77,7 @@ go mod tidy
 
 ## Gotcha! Semantic import versioning.
 
-When you use `go get` to import a module it is subject to Semantic Versioning. The short of it is that while you develop version starting with `0.` is considered to be your unstable **v0** version. When you have a `1.0.0` release you are considered to be at **v1**want. `2.x.y` becomes **v2**, `3.x.y` becomes **v3**. etc.
+When you use `go get` to import a module it is subject to Semantic Versioning. The short of it is that while you develop, versions starting with `0.` is considered to be your unstable **v0** version. When you have a `1.0.0` release you are considered to be at **v1**want. `2.x.y` becomes **v2**, `3.x.y` becomes **v3**. etc.
 
 This scheme also suggests that all releases within a major version be backwards compatible for all releases in that version. `1.4.2` should be backwards compatible all the way down to `1.0.0`. Makes sense to me. 
 
