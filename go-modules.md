@@ -79,7 +79,7 @@ go mod tidy
 
 When you use `go get` to import a module it is subject to Semantic Versioning. The short of it is that while you develop, versions starting with `0.` is considered to be your unstable **v0** version. When you have a `1.0.0` release you are considered to be at **v1**want. `2.x.y` becomes **v2**, `3.x.y` becomes **v3**. etc.
 
-This scheme also suggests that all releases within a major version be backwards compatible for all releases in that version. `1.4.2` should be backwards compatible all the way down to `1.0.0`. Makes sense to me. 
+This scheme also suggests that all releases within a major version be backward compatible for all releases in that version. `1.4.2` should be backward compatible all the way down to `1.0.0`. Makes sense to me. 
 
 But the gotcha comes when using `go get`. It will attempt to download your latest **v0/v1** version. So if your latest version is **v4.1.2** for example, `go get` will still pull your latest **v1** release. 🤯  What?!
 
