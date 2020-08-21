@@ -25,9 +25,9 @@ go mod init github.com/<username>/<reponame>
 
 ## `go.mod` and `go.sum`
 
-When you initiate your new Go project a new `go.mod` file will be generated with just the module name and the target Go version. As you start to add additional imports this file will be updated with modules and versions. More on that below.
+When you initiate your Go project a new `go.mod` file will be generated with just the module name and the target Go version. As you start to add additional imports this file will be updated with modules and versions. More on that below.
 
-Because our code doesn't currently have any dependencies, it's looking a bit empty. So let's create a quick server endpoint. I could use `http`, but that would now help me with my explanation. I'll use good old, Gorilla Mux as my router.
+Because our code doesn't currently have any dependencies, it's looking a bit empty. So let's create a quick server endpoint. I could use `http`, but that would not help me with my explanation. I'll use good old, Gorilla Mux as my router.
 
 ``` bash
 go get -u github.com/gorilla/mux
