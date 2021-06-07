@@ -73,6 +73,78 @@ First up! I am using Typescript for CDK. If you don't have it already setup, we 
 }
 ```
 
+Deployment (part 1 of 3). I set some CDK context I use often as well.
 
+**cdk.json**
+```json
+{
+    "app": "npx ts-node --prefer-ts-exts infra/deploy.ts",
+    "context": {
+        "@aws-cdk/core:enableStackNameDuplicates": "true",
+        "aws-cdk:enableDiffNoFail": "true",
+        "@aws-cdk/core:stackRelativeExports": "true",
+        "@aws-cdk/aws-ecs-patterns:removeDefaultDesiredCount": true
+    }
+}
+```
 
+Deployment (part 2 of 3). We are referencing our deploy.ts file, but lets first focus on our Node scripts. Add this to `scripts` in `package.json`. (Technically, you shouln't need `cdk bootstrap` in there on each deploy, but I do it as this is also my deploy script for CI/CD).
 
+**package.json**
+```json
+...
+"scripts": {
+    "cdk": "cdk",
+    "deploy": "cdk bootstrap && cdk deploy --require-approval never --outputs-file cdk.out.json",
+    "destroy": "cdk destroy --force"
+}
+...
+```
+
+Deployment (part 3 of 3). Now we can get CDK to load and deploy the stack (or stacks).
+
+**infra/deploy.ts** 
+```typescript
+#!/usr/bin/env node
+import 'source-map-support/register';
+import * as cdk from '@aws-cdk/core';
+import { MyAppStack } from './stack';
+
+const stage = process.env.STAGE || 'dev';
+const stackId = 'TestApp-' + stage ;
+const account = process.env.CDK_DEFAULT_ACCOUNT;
+const region = process.env.CDK_DEFAULT_REGION || 'ap-southeast-2';
+
+const app = new cdk.App();
+new MyAppStack(app, stackId, {
+  env: {
+    account,
+    region,
+  },
+  description: `Deploying TestApp (${stage})`
+});
+```
+
+Finally, lets setup the skeleton for our Stack.
+
+**infra/stack.ts**
+```typescript
+import * as cdk from '@aws-cdk/core';
+
+const stage = process.env.STAGE || 'dev';
+
+export class MyAppStack extends cdk.Stack {
+  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
+  }
+}
+```
+
+## Step 4 - Write your Infrastructure
+You can now start writing all your infrastructure in your `infra/stack.ts` file. Over time you may add multiple stacks, but this file is sufficient for small and big stacks; and if you're learning, this gives you a very clean place to start from.
+
+## Step 5 - Deploy and Destroy!
+Once you're happy with your stack you can run `cdk synth` to validate your stack. If you have no errors, go ahead and `yarn deploy`. If you're done testing or you're feeling destructive, you can run `yarn destroy`.
+
+**NOTE:** `cdk destroy` fails at the moment for `lambda@edge` resources. Don't worry, CDK will mark the resources for deletion and they will eventually just disappear. But, should you feel concerned, head over to your AWS Console in `us-east-1` and remove the Lambda functions manually.
