@@ -9,7 +9,7 @@ hidden: true
 * [[Disable Updates in WordPress]]
 * [[Quick Critical CSS Check]]
 * [[My CDK Deployment Steps]]
-* [[Building APIs with CDK and Swagger]]
+<!-- * [[Building APIs with CDK and Swagger]] -->
 * [[Setting up Mermaid.js for quick diagrams]]
 
 

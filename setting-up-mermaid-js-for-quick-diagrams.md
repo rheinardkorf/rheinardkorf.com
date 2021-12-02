@@ -1,5 +1,5 @@
 ----
-title: Setting up Mermaid.js for quick diagrams
+title: Setting up Mermaid for quick diagrams
 date: 2021-10-25T09:14:04+1100
 hidden: true
 ----

@@ -1,5 +1,5 @@
 ---
-title: The Complete Guide to Full Stack Ethereum Development - Tutorial for Beginners [2021
+title: The Complete Guide to Full Stack Ethereum Development - Tutorial for Beginners (2021)
 date: 2021-12-02T01:18:27.058Z
 hidden: true
 ---
