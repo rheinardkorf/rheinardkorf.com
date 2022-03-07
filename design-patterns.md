@@ -3,11 +3,11 @@ title: Design Patterns
 date: 2022-03-07T03:49:04.027Z
 ---
 
-Key:  
+Resources:  
 * GOF - "Gang of Four" Design Patterns
 * HFDP - Head First Design Patterns
 * MPHPDP - Mastering PHP Design Patterns
-* PHP8OPM - PHP 8 Objects, Patterns and Practice
+* PHP8OPP - PHP 8 Objects, Patterns and Practice
 
 ## Creational Patterns  
 
