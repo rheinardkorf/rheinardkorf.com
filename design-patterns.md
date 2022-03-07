@@ -1,5 +1,5 @@
 ---
-title: Design Patterns
+title: OOP Design Patterns
 date: 2022-03-07T03:49:04.027Z
 ---
 
