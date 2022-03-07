@@ -21,9 +21,6 @@ Key:
 | Singleton | Ch. 3 | Ch. 5 | Ch. 4 | Ch. 9
 | Lazy Initialization | - | - | Ch. 4 | -
 
-> GOF Chapter 3.  
-> Mastering PHP Design Patterns Chapter 4
-
 ## Structural Patterns  
 
 | Pattern  | GOF | HFDP | MPHPDP | PHP8OPP |
@@ -55,7 +52,7 @@ Key:
 | Specification | - | - | Ch. 5 | - 
 | Scheduled Task | - | - | Ch. 5 | - 
 
-## "Architectural Patterns"
+## Architectural Patterns
 
 | Pattern  | GOF | HFDP | MPHPDP | PHP8OPP |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
