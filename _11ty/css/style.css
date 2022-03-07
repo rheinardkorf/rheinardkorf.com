@@ -224,12 +224,12 @@ ol li {
   margin-bottom: 0.5rem;
 }
 
-ul li {
+ul>li {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 0.5rem;
 }
-ul li::before {
+ul>li::before {
   display: block;
   float: left;
   position: relative;
