@@ -17,6 +17,6 @@
     "deasync": "^0.1.21",
     "eleventy-plugin-local-respimg": "^0.4.0",
     "jimp": "^0.16.1",
-    "msdf-bmfont-xml": "^2.5.4"
+    "msdf-bmfont-xml": "^2.7.0"
   }
 }
