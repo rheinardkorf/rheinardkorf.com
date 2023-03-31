@@ -68,4 +68,8 @@ Resources:
 | Blockchain  | - | - | - | -
 
 Other Resources:
-* [https://chercher.tech/rust/introduction-rust]
+* <https://chercher.tech/rust/introduction-rust>
+* <https://designpatternsphp.readthedocs.io/en/latest/README.html>
+* <https://github.com/DesignPatternsPHP/DesignPatternsPHP>
+* <https://github.com/DovAmir/awesome-design-patterns>
+* <https://youtu.be/v9ejT8FO-7I>
