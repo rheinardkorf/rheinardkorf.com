@@ -1,6 +1,10 @@
 ---
-title: Beginning Solana Development
+id: beginning-solana-development
+aliases: []
+tags: []
 date: 2021-12-03T18:32:30.367Z
+hidden: true
+title: Beginning Solana Development
 ---
 
 * There are 2 ways to develop for the Solana blockchain.
@@ -10,7 +14,7 @@ date: 2021-12-03T18:32:30.367Z
   1. [Native Programs][native-programs] -- Core Solana programs like: **System**, **Staking**, **Voting**
   2. [Solana Program Library (SPL)][spl] -- Other common use programs like: **Token** (ERC20 equivalent, includes NFTs)
 
-![Solana Workflow Diagram][solana-diagram]  
+[Solana Workflow Diagram][solana-diagram]  
 
 * Solana is not EVM (Ethereum Virtual Machine) compatible, but there is a [bidirectional token bridge][evm-token-bridge] for Solana-Ethereum projects.
 * Solana uses Proof-of-History (PoH) for ordering transactions and Proof-of-Stake (PoS) for consensus.
