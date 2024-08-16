@@ -11,12 +11,11 @@
     "create-font": "msdf-bmfont"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
-    "cheerio": "^1.0.0-rc.5",
-    "deasync": "^0.1.21",
-    "eleventy-plugin-local-respimg": "^0.4.0",
-    "jimp": "^0.16.1",
-    "msdf-bmfont-xml": "^2.5.4"
+    "@11ty/eleventy": "3.0.0-alpha.18",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.0",
+    "cheerio": "^1.0.0",
+    "deasync": "^0.1.30",
+    "jimp": "^0.22.12"
   }
 }

@@ -5,22 +5,23 @@ const generateImage = require('./generateImage')
 const fs = require('fs')
 const deasync = require('deasync');
 
-Jimp.loadFont = deasync(Jimp.loadFont);
-Jimp.read = deasync(Jimp.read);
+const util = require('util') // or directly
+const matter = require('gray-matter')
+//Jimp.loadFont = deasync(Jimp.loadFont);
+//Jimp.read = deasync(Jimp.read);
 
-module.exports = function (eleventyConfig, pluginOptions) {
-
+module.exports = async function (eleventyConfig, pluginOptions) {
     // @TODO abstract this better.
     pluginOptions = {
-        primaryFont: Jimp.loadFont(path.join(__dirname, "assets", "crimson-text-700.fnt")),
-        secondaryFont: Jimp.loadFont(path.join(__dirname, "assets", "courier-prime-italic.fnt")),
+        primaryFont: await Jimp.loadFont(path.join(__dirname, "assets", "crimson-text-700.fnt")),
+        secondaryFont: await Jimp.loadFont(path.join(__dirname, "assets", "courier-prime-italic.fnt")),
         primaryFontSize: 70,
         secondaryFontSize: 32,
         primaryColor: '#ffffff',
         secondaryColor: '#DB2F2F',
         backgroundImage: fs.existsSync(path.join(__dirname, "assets", "background.png"))
-            ? Jimp.read(path.join(__dirname, "assets", "background.png"))
-            : new Jimp(options.width, options.height, "#323232"),
+            ? await Jimp.read(path.join(__dirname, "assets", "background.png"))
+            : new Jimp(pluginOptions.width, pluginOptions.height, "#323232"),
         backgroundDimensions: {
             width: 1200,
             height: 630,
@@ -31,20 +32,20 @@ module.exports = function (eleventyConfig, pluginOptions) {
     }
 
     eleventyConfig.addTransform("generateOG", async function (content, outputPath) {
-
+        const fmData = matter(fs.readFileSync(this.inputPath, 'utf8')).data || {};
         const {
             title,
             description,
             date,
-            siteMetadata,
-            page,
+            siteMetadata = pluginOptions.siteMetadata,
+            page = this.page,
             socialTitle,
             socialDescription,
             socialImage,
             twitterCard = "summary_large_image",
             ogType = "website",
             tags
-        } = this.dataCache;
+        } = fmData;
 
         const theTitle = socialTitle || title || "";
         const theURL = `${siteMetadata.baseUrl}${page.url}`;
@@ -80,6 +81,7 @@ module.exports = function (eleventyConfig, pluginOptions) {
         $('head').append(`<meta property="twitter:creator" content="${authorHandle}" />`);
         $('head').append(`<meta property="twitter:image" content="${theImage}" />`);
 
+        console.log(`Created OG image: ${theURL}`);
         return $.html();
     });
 }

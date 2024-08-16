@@ -49,7 +49,6 @@ const sizedHeight = (calculatedHeight, fontSize) => numberOfLines(calculatedHeig
 
 
 module.exports = async (props) => {
-
     const {
         title,
         tags,
